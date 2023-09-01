@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-main">
+      <div id="header" class="chat-header">
+        <h1>WhatsApp Chat</h1>
+        <button id="leave-chat">Leave</button>
+      </div>
+      <ul id="messages" class="chat-messages"></ul>
+      <form id="form" action="">
+        <input id="input" placeholder="/help" autocomplete="off" />
+        <button>Send</button>
+      </form>
+    </div>
+    <aside class="aside-components">
+      <div class="chat-sidebar">
+        <h3 class="title">Users List</h3>
+        <div class="chat-contacts"></div>
+        <p class="userCount">Online Users: <span id="userCount">0</span></p>
+      </div>
+      
+    </aside>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

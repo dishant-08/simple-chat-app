@@ -1,0 +1,133 @@
+/* Reset some default styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f8f8f8;
+  --font-color: #333;
+  --font-size: 16px;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+}
+
+/* Chat container */
+.chat-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Chat main area */
+.chat-main {
+  flex: 1;
+  padding: 20px; /* Added padding to separate main content from aside */
+  background-color: white; /* White background for the main chat area */
+}
+
+/* Chat header */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px; /* Added margin to separate header from messages */
+}
+
+.chat-messages {
+  list-style-type: none;
+  padding: 0;
+}
+
+.chat-messages li {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 70%;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Input form */
+#form {
+  display: flex;
+  margin-top: 20px; /* Added margin to separate input form from messages */
+}
+
+#input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 11px 15px;
+  margin-left: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Aside components */
+.aside-components {
+  width: 20%; /* Width for the aside components */
+  background-color: #f2f2f2;
+  border-left: 1px solid #ddd; /* Added border to separate the chat area and aside */
+}
+
+.chat-sidebar {
+  padding: 20px; /* Added padding to separate content from edges */
+}
+
+.title {
+  text-align: center;
+}
+
+.chat-contacts {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.chat-contacts:hover {
+  background-color: #0056b3;
+}
+
+.userCount {
+  background-color: var(--primary-color);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px; /* Added margin to separate user count from other content */
+}
+
+#contactCount {
+  text-align: center;
+  position: absolute;
+  top: 5;
+  left: 0;
+  width: 40px;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #0056b3;
+  color: white;
+}
